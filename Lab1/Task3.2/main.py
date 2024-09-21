@@ -1,0 +1,5 @@
+totalSeconds = int(input())
+hours = '{:02}'.format(totalSeconds // (60*60) % 24)
+minutes = '{:02}'.format(totalSeconds // 60 % 60)
+seconds = '{:02}'.format(totalSeconds % (60*60) % 60)
+print(f'{hours}:{minutes}:{seconds}')
